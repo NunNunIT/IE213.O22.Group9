@@ -1,0 +1,48 @@
+html {
+  font-size: 16px;
+}
+
+#form {
+  width: 25%;
+  padding: 4px;
+  margin: 24px auto;
+  background-color: pink;
+}
+
+.form__title {
+  padding: 4px;
+  background-color: palevioletred;
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.form__content {
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form__row {
+  display: flex;
+  align-items: center;
+}
+
+.form__row-text {
+  width: 50%;
+}
+
+.form__row-text-field {
+  padding: 4px;
+}
+
+.form__submit {
+  display: flex;
+  justify-content: center;
+}
+
+.form__submit-btn {
+  padding: 4px;
+}
