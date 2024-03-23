@@ -45,7 +45,7 @@ export default function BT1Page() {
     e.preventDefault();
     setInputs(inputs => ({
       ...inputs,
-      ["avg-mark"]: (parseFloat(inputs["first-semester-mark"] ?? 0) + parseFloat(inputs["second-semester-mark"] ?? 0)) / 2
+      ["avg-mark"]: (parseFloat(inputs["first-semester-mark"] ?? 0) + parseFloat(inputs["second-semester-mark"] ?? 0) * 2) / 3,
     }));
     setInputs(inputs => ({
       ...inputs,
@@ -107,17 +107,17 @@ export default function BT1Page() {
           </section>
           <section className="">
             <h2 className="">Kết quả hiển thị</h2>
-            <div>
+            <div className="form__row">
               <label htmlFor="form__input--avg-mark">Điểm trung bình: </label>
               <br />
               <input id="form__input--avg-mark" disabled value={inputs["avg-mark"]} />
             </div>
-            <div>
+            <div className="form__row">
               <label htmlFor="form__input--result">Kết quả: </label>
               <br />
               <input id="form__input--result" disabled value={inputs["result"]} />
             </div>
-            <div>
+            <div className="form__row">
               <label htmlFor="form__input--ability">Xếp loại học lực: </label>
               <br />
               <input id="form__input--ability" disabled value={inputs["ability"]} />

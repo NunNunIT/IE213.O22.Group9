@@ -42,6 +42,16 @@ input {
   border-radius: .5rem;
 }
 
+textarea {
+  width: 100%;
+
+  margin-top: .25rem;
+}
+
+input[type="checkbox"] {
+  width: min-content;
+}
+
 input[type="button"],
 input[type="submit"] {
   min-width: 5rem;
@@ -74,4 +84,10 @@ input[type="submit"]:active {
 footer {
   height: 400px;
   background: white;
+}
+
+main>* {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding-bottom: .5rem;
 }

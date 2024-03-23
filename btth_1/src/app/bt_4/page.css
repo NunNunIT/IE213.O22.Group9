@@ -11,7 +11,7 @@ header {
 }
 
 main {
-  width: min(80%, 768px);
+  width: min(80%, 480px);
 
   margin: 2rem auto;
   padding: 2rem;
@@ -19,6 +19,10 @@ main {
   box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
 
   background-color: white;
+}
+
+h2 {
+  margin-bottom: 1rem;
 }
 
 form {
@@ -32,9 +36,20 @@ form {
 }
 
 input {
+  width: 100%;
   margin-top: .25rem;
   padding: .5rem;
   border-radius: .5rem;
+}
+
+textarea {
+  width: 100%;
+
+  margin-top: .25rem;
+}
+
+input[type="checkbox"] {
+  width: min-content;
 }
 
 input[type="button"],

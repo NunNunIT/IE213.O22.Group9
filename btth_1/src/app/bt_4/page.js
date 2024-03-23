@@ -37,10 +37,10 @@ export default function BT4Page() {
     setInputs(inputs => ({ ...inputs, [name]: values }))
   }
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert(`${JSON.stringify(inputs)}`);
-  }
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   alert(`${JSON.stringify(inputs)}`);
+  // }
 
   return (
     <>
@@ -48,7 +48,7 @@ export default function BT4Page() {
         <h1 className="">Theo dõi học tập</h1>
       </header>
       <main className="">
-        <form className="" onSubmit={handleSubmit}>
+        <form className="" action="/bt_4/result">
           <section className="form--reservation">
             <h2 className="">Thông tin chung:</h2>
             <div className="form__row">
@@ -102,21 +102,21 @@ export default function BT4Page() {
           </section>
           <section className="">
             <h2 className="">Nội dung phân công</h2>
-            <div>
+            <div className="form__row">
               <label htmlFor="form__input--note">Những việc chưa phân công:</label>
               <br />
-              <textarea id="form__input--note" name="note" rows="3" col="90"
+              <textarea id="form__input--note" name="note" rows="3" col="300"
                 onChange={handleInput}
               />
             </div>
-            <div className="">
+            <div className="form__row">
               <span className="">Chọn hình thức hoàn thành:</span>
               <br />
               <input
                 type="checkbox"
                 id="form__input--is-must-done-right-now"
                 name="type"
-                value="is-must-done-right-now"
+                value="Tại lớp"
                 onChange={handelInputCheckBox}
               />{" "}
               <label for="form__input--is-must-done-right-now">Những việc chưa làm sẽ được hoàn thành ngay tại lớp.</label>
@@ -124,8 +124,8 @@ export default function BT4Page() {
               <input
                 type="checkbox"
                 id="form__input--is-must-done-in-next-time"
-                name="type"
-                value="is-must-done-in-next-time"
+                name="type_1"
+                value="Tại nhà"
                 onChange={handelInputCheckBox}
               />{" "}
               <label for="form__input--is-must-done-in-next-time">Sẽ hoàn thành những việc chưa làm tại nhà và nộp lại cho giáo viên vào ngày hôm sau.</label>

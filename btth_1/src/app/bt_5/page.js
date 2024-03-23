@@ -129,13 +129,13 @@ export default function BT5Page() {
                   onChange={handleInput}
                   className=""
                 />{" "}
-                <label htmlFor="form__input--location-outside">Ngoài nhà</label>
+                <label htmlFor="form__input--location-outside">Ngoài trời</label>
               </span>
             </div>
           </section>
           <section className="">
             <h2 className="">Thông tin người đặt</h2>
-            <div>
+            <div className="form__row">
               <label htmlFor="form__input--name">Nhập tên của quý khách: </label>
               <input
                 type="text"
@@ -146,7 +146,7 @@ export default function BT5Page() {
                 onChange={handleInput}
               />
             </div>
-            <div>
+            <div className="form__row">
               <label htmlFor="form__input--address">Địa chỉ liên lạc: </label>
               <input
                 type="text"
@@ -157,7 +157,7 @@ export default function BT5Page() {
                 onChange={handleInput}
               />
             </div>
-            <div>
+            <div className="form__row">
               <label htmlFor="form__input--range-age">Độ tuổi: </label>
               <input
                 list="form__data-list--range-age"
@@ -175,7 +175,7 @@ export default function BT5Page() {
                 <option value="Từ 70 tuổi trở lên" />
               </datalist>
             </div>
-            <div>
+            <div className="form__row">
               <span className="form__group-label--gender">Giới tính: </span>
               <br />
               <span className="form__group-input--gender"
@@ -203,34 +203,34 @@ export default function BT5Page() {
           </section>
           <section className="">
             <h2 className="">Thông tin khác: </h2>
-            <div>
+            <div className="form__row">
               <label htmlFor="form__label--hear-from">
                 Quý khách biết đến nhà hàng của chúng tôi qua:
-                <select multiple size={3} id="form__label--hear-from"
-                  name="hear-form"
-                  onChange={handleSelectMulti}
-                >
-                  <option value="newspaper">Báo chí</option>
-                  <option value="caster">Đài phát thành</option>
-                  <option value="tivi">Tivi</option>
-                </select>
               </label>
+              <select multiple size={3} id="form__label--hear-from"
+                name="hear-form"
+                onChange={handleSelectMulti}
+              >
+                <option value="newspaper">Báo chí</option>
+                <option value="caster">Đài phát thành</option>
+                <option value="tivi">Tivi</option>
+              </select>
             </div>
-            <div>
+            <div className="form__row">
               <label htmlFor="form__label--note">Các yêu cầu của quý khách:</label>
               <textarea id="form__label--note" name="note" rows="3" col="30"
                 onChange={handleInput}
               />
             </div>
-            <div>
-              <input
-                type="submit"
-                id="form__submit"
-                value="Ghi nhận"
-                className=""
-              />
-            </div>
           </section>
+          <div className="form__row">
+            <input
+              type="submit"
+              id="form__submit"
+              value="Đặt chỗ"
+              className=""
+            />
+          </div>
         </form >
       </main >
       <footer className=""></footer>
