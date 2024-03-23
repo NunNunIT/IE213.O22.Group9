@@ -6,12 +6,12 @@
 * Nhóm sinh viên thực hiện: Nhóm 9
 
 ## Danh sách thành viên
-|STT | Họ tên | MSSV|Chức vụ|
-|:---:|:-------------:|:-----:|:-----:|
-|1. 	| Nguyễn Thị Hồng Nhung | 21522436| Nhóm trưởng |
-|2. 	| Lê Đức Mạnh		| 21521116 | Thành viên |
-|3. 	| Lê Trung Hiếu		|	21520850 | Thành viên |
-|4.  | Nguyễn Nhật Tấn | 21521415 | Thành viên |
+|STT | Họ tên | MSSV|Chức vụ| Nhánh |
+|:---:|:-------------:|:-----:|:-----:|:-----:|
+|1. 	| Nguyễn Thị Hồng Nhung | 21522436| Nhóm trưởng |  NguyenThiHongNhung |
+|2. 	| Lê Đức Mạnh		| 21521116 | Thành viên | leducmanh |
+|3. 	| Lê Trung Hiếu		|	21520850 | Thành viên | LeTrungHieu |
+|4.  | Nguyễn Nhật Tấn | 21521415 | Thành viên | NguyenNhatTan |
 
 ## Hướng dẫn thực hiện xem các nhánh khác và chạy thử bài tập
 
