@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 import styles from "./page.module.css";
 
@@ -37,6 +38,13 @@ export default function Home() {
           height={37}
           priority
         />
+      </div>
+      <div>
+        <Link href="/bt_1">Bài tập thực hành 1</Link>
+        <br />
+        <Link href="/bt_4">Bài tập thực hành 4</Link>
+        <br />
+        <Link href="/bt_5">Bài tập thực hành 5</Link>
       </div>
 
       <div className={styles.grid}>
