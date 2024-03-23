@@ -25,8 +25,8 @@
 }
 
 .form_body {
-  padding: 0.5rem;
-  background-color: rgb(230, 179, 174);
+  padding: 12px;
+  background-color: #FFF3E2;
   font-size: 1.2rem;
 }
 
@@ -36,8 +36,8 @@
 }
 
 .header {
-  color: yellow;
-  background-color: red;
+  color: #FFE5CA;
+  background-color: #E74646;
   padding: 8px 0;
   display: flex;
   justify-content: center;
@@ -62,7 +62,7 @@
 }
 
 .body_head label {
-  color: rgba(216, 102, 79, 0.8);
+  color: #FA9884;
   font-weight: 600;
   font-size: 1.2rem;
   display: inline-block;
@@ -135,7 +135,7 @@ textarea {
 
 .form_result {
   margin-top: 2rem;
-  background-color: rgb(230, 179, 174);
+  background-color: #FFF3E2;
   font-size: 1.2rem;
 }
 
