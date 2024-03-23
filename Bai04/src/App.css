@@ -1,0 +1,145 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 50px;
+	flex-direction: column;
+}
+
+.form-study {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	font-size: 16px;
+	width: 45%;
+}
+
+.form-study__heading {
+	background-color: #6983a3;
+	color: white;
+	width: 100%;
+	text-align: center;
+	padding: 8px 0;
+}
+
+.form-study__body {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding: 16px;
+	background-color: #eaf1f9;
+}
+
+.form-study__body--container {
+	display: flex;
+	flex-direction: row;
+}
+
+.form-study__form-control {
+	font-size: 1em;
+	margin: 6px 0;
+	display: flex;
+}
+
+.form-study__form-control label {
+	min-width: 150px;
+	display: flex;
+	align-items: center;
+}
+
+.form-study__form-control input {
+	flex: 1;
+	padding: 4px;
+	border-radius: 3px;
+}
+
+.form-study__body--left {
+	flex: 2.5;
+}
+
+.form-study__body--right {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 8px;
+	flex: 1;
+}
+
+.form-study__body--right img {
+	width: 180px;
+}
+
+.form-study__form-control--half {
+	display: flex;
+	flex-direction: row;
+	flex: 1;
+	margin: 0 4px;
+}
+
+.form-study__form-control--half label {
+	min-width: 60px;
+}
+
+.form-study__form-control--textarea {
+	display: flex;
+	flex-direction: column;
+}
+
+.form-study__form-control--textarea textarea {
+	margin: 6px 0;
+	padding: 8px;
+	height: 80px;
+	border-radius: 3px;
+	resize: none;
+}
+
+.form-study__form-control--checkbox {
+	display: flex;
+	flex-direction: column;
+}
+
+.form-study__form-control--checkbox__item {
+	margin-top: 12px;
+	display: flex;
+	align-items: center;
+}
+
+.form-study__form-control--checkbox__item input {
+	--size-checkbox: 18px;
+	margin: 0 4px 0 0;
+	width: var(--size-checkbox);
+	height: var(--size-checkbox);
+}
+
+.form-study__submit {
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+}
+
+.form-study__submit button {
+	padding: 8px 16px;
+	background-color: #6983a3;
+	color: white;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.result {
+	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+	padding: 24px 16px;
+	background-color: #6983a3;
+	color: white;
+	border-radius: 3px;
+}

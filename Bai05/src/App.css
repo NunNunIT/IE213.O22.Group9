@@ -1,0 +1,147 @@
+* {
+	padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.gap-5 {
+	display: flex;
+	gap: 5px;
+	align-items: center;
+}
+
+.gap-10 {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+
+.form_body {
+	padding: 0.5rem;
+	background-color: rgb(230, 179, 174);
+	font-size: 1.2rem;
+}
+
+.header h1 {
+	margin: 0;
+	font-weight: 800;
+}
+
+.header {
+	color: yellow;
+	background-color: red;
+	padding: 8px 0;
+	display: flex;
+	justify-content: center;
+}
+
+.form_container {
+	display: flex;
+	justify-content: center;
+	width: 1500px;
+}
+
+.form,
+.form_result {
+	width: 900px;
+}
+
+.body_head {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.body_head label {
+	color: rgba(216, 102, 79, 0.8);
+	font-weight: 600;
+	font-size: 1.2rem;
+	display: inline-block;
+	margin-right: 4px;
+}
+
+.party,
+.location {
+	display: flex;
+	align-items: center;
+}
+
+.party div,
+.location div {
+	display: flex;
+	align-items: center;
+	padding: 0 10px;
+}
+
+.info {
+	display: flex;
+	gap: 100px;
+}
+
+.form_body_group + .form_body_group {
+	margin-top: 20px;
+}
+
+.form_body_group--flex {
+	display: flex;
+	gap: 80px;
+	align-items: center;
+}
+
+#requirement {
+	resize: none;
+	height: 5rem;
+	width: 100%;
+	display: block;
+	margin-top: 10px;
+}
+
+.form_body input,
+select,
+textarea {
+	font-size: 1rem;
+	padding: 4px;
+}
+
+.form_body select {
+	padding: 0;
+}
+
+.form_body select option {
+	padding: 2px;
+}
+
+.form_body_btn {
+	font-size: 1rem;
+	margin: 0 auto;
+	display: flex;
+	padding: 4px 8px;
+	cursor: pointer;
+	user-select: none;
+}
+
+.know-from select option:checked {
+	background: rgb(43, 20, 146) linear-gradient(0deg, rgb(17, 78, 124) 0%, rgb(2, 145, 216) 100%);
+}
+
+.form_result {
+	margin-top: 2rem;
+	background-color: rgb(230, 179, 174);
+	font-size: 1.2rem;
+}
+
+.form_result_body {
+	padding: 10px 4px 2px;
+}
+
+.hidden {
+	display: none;
+}
